@@ -1,0 +1,167 @@
+<template>
+  <div class="app-container">
+    <p>后来你选择去了央视，而我留在了原地, 北平的风终究吹不到武汉，平凡的我也配不上优秀的你。</p>
+    <a class="tips">你还是喜欢吃胖头鱼,面对镜头,还是喜欢开大头特效.</a>
+    <el-tabs>
+      <el-tab-pane label="合集">
+        <el-image v-for="url in urls1" :key="url" :src="url"></el-image
+      ></el-tab-pane>
+      <el-tab-pane label="横屏">
+        <el-image v-for="url in urls2" :key="url" :src="url"></el-image
+      ></el-tab-pane>
+      <el-tab-pane label="竖屏">
+        <el-image v-for="url in urls3" :key="url" :src="url"></el-image
+      ></el-tab-pane>
+      <el-tab-pane label="方形">
+        <el-image v-for="url in urls4" :key="url" :src="url"></el-image
+      ></el-tab-pane>
+    </el-tabs>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "bingbing",
+  data() {
+    return {
+      urls1: [
+        "https://pica.zhimg.com/80/v2-2ef0ffaf8fbe7ef44964e3c2cb8ca6c2_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-9a2c218a939eb8ae2d44d0059f8f8a0c_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-44b7918770a132167379d681e3788973_1440w.jpg?source=1940ef5c",
+        "https://pic4.zhimg.com/80/v2-181cf286f9a3bf3f137c02269dcded75_1440w.jpg?source=1940ef5c",
+        "https://pic4.zhimg.com/80/v2-a5864773ed7e8ce4aca06c9c50166c1c_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-aa37713bccd71bb3785c10b706a2e613_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-57dc26e38605f951472b2dd1bb8d8e54_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-41205cc13dcaf06ad5b9646cdec93431_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-4b4d2f87573d9349b0976a8ff068aab1_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-5adbac41fe82ff0439fcaea18aa6954f_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-246833cd489c4c55166dd3ba51515a0b_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-a43149918db3a8c3a63a8d6520ffc4df_1440w.jpg?source=1940ef5c",
+      ],
+      urls2: [
+        "https://pic2.zhimg.com/80/v2-4559cb3824cb9a556e08232dda42b244_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-4df8c2b7d35267e5380595280e6f30e8_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-4a8ee13249351126b76c79e253740102_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-2eeac1266123b7adbc313ffb7c9e0940_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-a919b2080ea85fd6f16740ce258ec503_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-ec9a0a80bcadf669935f7c6ee5038e4c_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-ad7858c7a152a90260bc9f726c6403d3_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-142d0d7c83eb7327d1dfb6f879e97a3e_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-48a8946d8297942098b7b8007477dde5_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-19ec3d67dbd0f52bd347d219929f2583_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-a7f01d058b2dc03ebbfbb19503b5116c_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-ee220b9904d7e5b618b9cf9be0a86a09_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-95f29b1f1283a7d1bb931aa5b65c3bce_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-388f5f80541268be4359ccd4bb63d866_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-55bef38577aace9c945cc7cc13727f78_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-c0e0b7369a2e451cb53c3875b8ca2792_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-1454be345fc426185d3f003b81ba7782_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-ac35c0cee638b04e4dd7a33efa71caa5_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-246f9a0c9d918835a30b3a2385da1774_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-aff7d6a4027d156bbe0e28cb3e621633_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-6b1c5000db87a99054f1c20a96d0d91d_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-98239523114a9be8ba124b826f147dba_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-61ee02de5adf51f40e2db8e63154ed3b_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-c96f76d521cf0eda4ac75b1ad275b549_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-5432b82b4960ec2369d6aaed386a5220_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-88928567313e899ad05261e3b25568d1_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-28ea0f1638165f27cd6ba6e05b8a459e_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-7dea14b60d894f2bd1f223e5aeca183a_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-cdbafbd8646b85d0fb0dabd73a1ae8ba_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-2c129382f5f29ad05c78c8de7aee4014_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-e8a124cd4846f4994c71b00e23410970_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-a0c5812abe65fd1c26d439dc0a1c129d_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-644e0ff00a40d86407e1f6ea28a2a645_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-2ea40c1131ff7f7cd59745152c1e75d0_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-54acbf4b2c1e5c78c7a23a93d0b17c0f_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-0d8fe5a6852fafa8028400d91e403929_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-2a2bb04f5ce3b4737a7264bd0f814aab_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-e4e933375b971b0941907ff9d7985188_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-6c2b88fea36a5f9824a9213be208ac88_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-503fa2bc86deaee8144e3eb796fa21cd_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-7030ace7b66da35fedc3b4b7de0a9ced_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-11de706aa6ea06a39c519127990c335c_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-9cd5c6501b2e41f38a3783656d616cc1_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-0b7a984aced34e202a931601f3b33077_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-82b42a33cae2a3d8a9440948f3976c31_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-60ab27c46f90b5aa586d789259b43fa6_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-72feb6d5126a0dccd4d28917f7c5d9b8_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-258d182d57dd40c7ba516ffcc0d7641d_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-b47ab2c2b07be6b55aa218900f97bd94_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-c3087099ab99a3d3fb41805fca7744b5_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-7efc4e341b8a7555c1b4abfe7daff1e1_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-eae0ecbd982b5d5a3b92699d7f33b12d_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-2198b5a1500f691edc7b7121c25bcc46_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-b3196f1d20c57a9e6852ea2e1c37a9ee_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-1bcf7cb19ebc5afe2d9feac86d838f79_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-899718106f790d93d1630bcb339277cf_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-44773f23443bb9a373f582239d9f278d_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-52ea806270b13c1f2772aa0393f4fa63_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-887b8433d078be004372074c423dd1ad_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-85742e7656d6cf8857804ca37b5aeffc_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-d4c1773b1a3c73aafde3c7af770d45ca_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-e578c33e55a8155982d420949d9349d1_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-0daf209b738e2b4f976dfdf796bf18ca_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-c5629c2cea0f46a7d353b4ef888fb40c_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-ae8263b3212c85be766bde4bacb5cd30_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-8a7ecba83fc77be77d349d1bd831f91d_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-b49fd31b391961a68d54b00004a0d73c_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-ceac4fd74d8a32eed807349a9245c545_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-502a190fb98958c7f3fcf4fe4204f4ab_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-ab24daa9845e408962bd5d03d91ec06e_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-c7bead692bd5f1532cdc66b770120d67_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-67339109eca396e1e64a5c17898e9110_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-3e0a6d26c0d6bc4399304373af4feba0_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-110d5a6ba50176fc56cb594f6c9e7e01_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-7a58b4f0f69257e2fe49193937bad891_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-1d5b084643759be662b6d48fd05dcfe1_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-9ca2fa03a1e0a3c6ac4306901331af77_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-bbd26c91e05e9c0abccfe0f9646c90c1_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-d48434a9a5d81ef6762416c0f0e05243_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-f834d1441c9a7051cbc069cbcafe6050_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-62703760fcc7fabf46a0dfe8a06b3a51_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-967cfb2ec038a4fe70534f58c0de34ca_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-d4a777440699b24a25898b7121c53e25_1440w.jpg?source=1940ef5c",
+      ],
+      urls3: [
+        "https://pic1.zhimg.com/80/v2-a6a4e32610d3e5b8dded8d961599a359_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-34481a84cfa0afc86442d8468f2df9b1_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-50753f9cb1614e6768daf3e24ca243bb_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-31b3a0f0b6e77dca000e03f6a85077f8_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-dfbbff323cf7a13c92e3d3cc820fd100_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-0594c59fc5a9b63adbd23c57ce38cf70_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-2e7345d3555577e917b05355029ad732_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-e25306f6d374aa77f5d2ee71c65f75b0_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-e16563d2243d55144ff9b27eaefe06af_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-2e1099facdcd12be784aed74389469e1_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-02ab85abe4acc337f808ada3b06cb14d_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-380c48cac75e6df634bbe971c9c3f245_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-f5a96a839b9b96621c98cff9754a4f31_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-4d910626f4a2125a4687d5789dd7d639_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-ce8176898ed609d6fb4830ceec844a4c_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-20d7d1b81dc0626a19a02f53870e91bb_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-fd3704159be9d81d24f86607cd4fc55c_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-690b78374f5a61c00fbfd71794085208_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-5248b5f209c26406792c02fe9dbf5d42_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-aa37713bccd71bb3785c10b706a2e613_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-d996dd8f8eca149a745fafffe9b3e350_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-39d12a451732ee44cb94bb452aa914ee_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-59ae0ed6a3c98dd1d620f67a1f3887a5_1440w.jpg?source=1940ef5c",
+      ],
+      urls4: [
+        "https://pic1.zhimg.com/80/v2-55cf504afb0f0ab39ac99dfbf9e2a188_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-efbbad6246331831bf61edbed53926e5_1440w.jpg?source=1940ef5c",
+        "https://pic2.zhimg.com/80/v2-e20f37064e026d697d36347137363d78_1440w.jpg?source=1940ef5c",
+        "https://pica.zhimg.com/80/v2-f813e93c2d71559909548c116c6a0840_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-1b25e76bb8c7bc2f0014765288851f25_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-f123c6b1cbd65aa487df88c48c5de4be_1440w.jpg?source=1940ef5c",
+        "https://pic3.zhimg.com/80/v2-462b894349e5f6fd3e303581046e452b_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-7e37b26e83f51f554b76fcfe81805e9c_1440w.jpg?source=1940ef5c",
+        "https://pic1.zhimg.com/80/v2-5ac78d011e12c8695ce27fde9609d856_1440w.jpg?source=1940ef5c",
+      ],
+    };
+  },
+  created() {},
+  methods: {},
+};
+</script>
